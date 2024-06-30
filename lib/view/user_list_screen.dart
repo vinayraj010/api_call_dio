@@ -42,6 +42,7 @@ class _UserListScreenState extends State<UserListScreen> {
                 return ListTile(
                   title: Text(user.name!),
                   subtitle: Text(user.phone!),
+                  trailing: Text(user.company!.name.toString()),
                 );
               },
             ),
